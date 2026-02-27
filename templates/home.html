@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="display-4 mb-4">Welcome to Flask Market! 🛒</h1>
+        <p class="lead mb-4">
+            Your one-stop destination for amazing products at great prices.
+            Browse our marketplace and find exactly what you're looking for.
+        </p>
+        
+        <div class="row mt-5">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">🛍️ Wide Selection</h5>
+                        <p class="card-text">Find products from various categories at competitive prices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">✨ Quality Products</h5>
+                        <p class="card-text">All items are verified and described accurately for your satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">🚀 Easy Shopping</h5>
+                        <p class="card-text">Simple and intuitive interface for a seamless shopping experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="{{ url_for('market') }}" class="btn btn-primary btn-lg mt-3">Visit Market</a>
+    </div>
+</div>
+{% endblock %}
